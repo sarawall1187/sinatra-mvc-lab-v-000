@@ -6,12 +6,15 @@ class PigLatinizer
    words = sent.split(' ')
    result = []
 
-words.each_with_index do |word, i|
+   words.each_with_index do |word, i|
    translation = ''
    qu = false
    if vowels.include? word[0]
        translation = word + 'ay'
        result.push(translation)
+    elsif word == "i" || word == "I"
+      translation = word + 'way'
+      
    else
        word = word.split('')
        count = 0
@@ -23,7 +26,7 @@ words.each_with_index do |word, i|
                    translation = words[i][count + 1..words[i].length] + translation + 'uay'
                    result.push(translation)
                    next
-               end
+                 end
                break
            else
                # handle words with 'qu' in middle
