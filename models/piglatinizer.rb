@@ -12,8 +12,8 @@ class PigLatinizer
    if vowels.include? word[0]
        translation = word + 'ay'
        result.push(translation)
-    elsif word == "i" || word == "I"
-      translation = word + 'way'
+    # elsif word == "i" || word == "I"
+    #   translation = word + 'way'
    else
        word = word.split('')
        count = 0
