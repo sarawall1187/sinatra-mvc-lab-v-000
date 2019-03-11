@@ -7,7 +7,6 @@ class App < Sinatra::Base
   end
 
   post '/' do
-
-    erb
+    erb :translation
   end
 end
