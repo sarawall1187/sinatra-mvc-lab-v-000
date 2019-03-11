@@ -45,8 +45,8 @@ words.each_with_index do |word, i|
        end
    end
 
-end
-result.join(' ')
+ end
+ result.join(' ')
 
   end
 
