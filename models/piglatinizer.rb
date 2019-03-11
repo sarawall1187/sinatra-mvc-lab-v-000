@@ -14,7 +14,6 @@ class PigLatinizer
        result.push(translation)
     elsif word == "i" || word == "I"
       translation = word + 'way'
-
    else
        word = word.split('')
        count = 0
