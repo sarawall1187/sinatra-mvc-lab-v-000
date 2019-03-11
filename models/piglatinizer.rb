@@ -1,7 +1,7 @@
 class PigLatinizer
 
   def piglatinize(sent)
-    sent = sent
+    # sent = sent
    vowels = ['a', 'e', 'i', 'o', 'u']
    words = sent.split(' ')
    result = []
