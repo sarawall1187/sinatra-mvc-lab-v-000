@@ -10,7 +10,7 @@ class PigLatinizer
    translation = ''
    qu = false
    if vowels.include? word[0].downcase
-       translation = word + 'ay'
+       translation = word + 'way'
        result.push(translation)
     # elsif word == "i" || word == "I"
     #   translation = word + 'way'
